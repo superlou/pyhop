@@ -157,7 +157,7 @@ def get_methods():
 # The actual planner
 
 
-def plan(state, tasks, operators, methods, verbose=0):
+def plan(state, tasks, operators=get_operators(), methods=get_methods(), verbose=0):
     """
     Try to find a plan that accomplishes tasks in state.
     If successful, return the plan. Otherwise return False.
